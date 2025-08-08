@@ -17,16 +17,3 @@ const Notification = {
 };
 
 export default Notification;
-
-<ToastContainer
-  position="top-center"
-  autoClose={5000}
-  hideProgressBar={false}
-  newestOnTop
-  closeOnClick={true}
-  rtl={false}
-  pauseOnFocusLoss={false}
-  draggable={false}
-  pauseOnHover={true}
-  theme="colored"
-/>;
