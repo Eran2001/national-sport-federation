@@ -2,6 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/index";
 import { Suspense } from "react";
 import { ToastContainer } from "react-toastify";
+import "./index.css";
 
 function App() {
   return (

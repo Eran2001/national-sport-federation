@@ -1,3 +1,5 @@
+import Notification from "@/components/ui/Notification";
+
 const Home = () => {
   return (
     <>
