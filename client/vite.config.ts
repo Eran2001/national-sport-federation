@@ -14,7 +14,6 @@ export default defineConfig({
   server: {
     host: "devlop.national-sports-federation.dev-sports.lk",
     port: 5173,
-    https: false,
   },
   resolve: {
     alias: {
