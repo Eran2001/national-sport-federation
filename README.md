@@ -43,13 +43,16 @@ This project simulates a real-world website for a national-level sports federati
 
 ### 🔧 Backend (Go Fiber)
 
-````bash
+```bash
 cd server
 go mod tidy
 go run main.go
+```
+
+### 🔧 Frontend (React + Vite)
 
 ```bash
 cd client
 npm install
 npm run dev
-````
+```
