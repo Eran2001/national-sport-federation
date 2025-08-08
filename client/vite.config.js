@@ -12,8 +12,9 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    host: "devlop.national-sports-federation.dev-sports.lk",
+    host: "develop.national-sports-federation.dev-sports.lk",
     port: 5173,
+    https: false,
   },
   resolve: {
     alias: {
