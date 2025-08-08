@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+@theme {
+  /* Define a primary color */
+  --color-primary: #ff6347;
+
+  /* Define a secondary color */
+  --color-secondary: #4682b4;
+
+  /* Define a accent color */
+  --color-accent: #f59e0b;
+
+  /* Define a text color */
+  --color-text: #111827;
+
+  /* Define a muted color */
+  --color-muted: #6b7280;
+
+  /* Define a border color */
+  --color-border: #d1d5db;
+
+  /* Define a light color */
+  --color-light: #ffffff;
+
+  /* Define a success color */
+  --color-success: #10b981;
+
+  /* Define a warning color */
+  --color-warning: #fbbf24;
+
+  /* Define a error color */
+  --color-error: #ef4444;
+}
