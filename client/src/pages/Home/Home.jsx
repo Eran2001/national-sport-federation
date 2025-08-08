@@ -1,12 +1,5 @@
-import { useEffect } from "react";
-
-import Notification from "@/components/ui/Notification";
-
 const Home = () => {
-  useEffect(() => {
-    Notification.success("Yes");
-  }, []);
-  return <div>Home</div>;
+  return <div className="text-2xl">Home</div>;
 };
 
 export default Home;
