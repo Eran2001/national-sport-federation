@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="bg-secondary w-full py-4 fixed z-50">
+    <div className="bg-secondary w-full h-16 fixed z-50 flex items-center">
       <h1>NavBar</h1>
     </div>
   );
