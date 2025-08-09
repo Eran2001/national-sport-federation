@@ -17,13 +17,13 @@ body {
 
 @theme {
   /* Define a primary color */
-  --color-primary: #ff6347;
+  --color-primary: #004030;
 
   /* Define a secondary color */
-  --color-secondary: #4682b4;
+  --color-secondary: #4a9782;
 
-  /* Define a accent color */
-  --color-accent: #f59e0b;
+  /* Define a third color */
+  --color-third: #f59e0b;
 
   /* Define a text color */
   --color-text: #111827;
@@ -35,7 +35,7 @@ body {
   --color-border: #d1d5db;
 
   /* Define a light color */
-  --color-light: #ffffff;
+  --color-light: #fff9e5;
 
   /* Define a success color */
   --color-success: #10b981;
