@@ -11,7 +11,7 @@ const Footer = () => {
           </div>
           <p className="text-border text-sm leading-relaxed max-w-xs">
             A stunning footer UI for React explicitly designed for websites,
-            featuring an eye-catching gradient background.
+            featuring.
           </p>
           <ul className="flex gap-4">
             {["facebook", "twitter", "instagram", "linkedin"].map((social) => (
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-start gap-6">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-light text-lg font-semibold">Company</h3>
           <ul className="text-border flex flex-col gap-3 text-sm">
             {[
@@ -52,7 +52,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-start gap-6">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-light text-lg font-semibold">Customer</h3>
           <ul className="text-border flex flex-col gap-3 text-sm">
             {[
@@ -73,7 +73,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col items-start gap-6">
+        <div className="flex flex-col items-start gap-8">
           <h3 className="text-light text-lg font-semibold">Additional</h3>
           <ul className="text-border flex flex-col gap-3 text-sm">
             {["Our story", "Who we are", "Our process", "Latest news"].map(
@@ -95,7 +95,7 @@ const Footer = () => {
       <hr className="relative z-10 border-t border-border opacity-50 mx-6 md:mx-12 lg:mx-24" />
 
       {/* Bottom Section */}
-      <div className="relative z-10 max-w-7xl mx-auto py-8 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 lg:px-24 gap-6">
+      <div className="relative z-10 max-w-7xl mx-auto py-8 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 lg:px-24 gap-8">
         <ul className="flex flex-wrap justify-center items-center gap-6">
           {["Privacy policy", "Legal notice", "Terms of service"].map(
             (item) => (

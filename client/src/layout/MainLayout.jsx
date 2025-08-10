@@ -9,7 +9,7 @@ export default function MainLayout() {
     <>
       <ScrollToTop />
       <NavBar />
-      <main className="min-h-screen pt-16">
+      <main className="min-h-screen">
         <Outlet />
       </main>
       <Footer />
