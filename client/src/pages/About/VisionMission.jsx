@@ -1,7 +1,7 @@
 import React from "react";
 
 const VisionMission = () => {
-  return <div>VisionMission</div>;
+  return <div className="bg-red-300 min-h-screen">VisionMission</div>;
 };
 
 export default VisionMission;
