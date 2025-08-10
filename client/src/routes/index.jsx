@@ -49,6 +49,7 @@ import RuleBooks from "@/pages/Resources/RuleBooks";
 import Downloads from "@/pages/Resources/Downloads";
 
 // Gallery sub-pages
+import Gallery from "@/pages/Gallery/Gallery";
 import Photos from "@/pages/Gallery/Photos";
 import Videos from "@/pages/Gallery/Videos";
 import EventHighlights from "@/pages/Gallery/EventHighlights";
@@ -61,6 +62,9 @@ import Donations from "@/pages/GetInvolved/Donations";
 
 // Contact page
 import Contact from "@/pages/Contact/Contact";
+import ContactForm from "@/pages/Contact/ContactForm";
+import OfficeDetails from "@/pages/Contact/OfficeDetails";
+import SocialMediaLinks from "@/pages/Contact/SocialMediaLinks";
 
 export const router = createBrowserRouter([
   {
@@ -154,7 +158,7 @@ export const router = createBrowserRouter([
       {
         path: "gallery",
         children: [
-          { index: true, element: <Photos /> },
+          { index: true, element: <Gallery /> },
           { path: "photos", element: <Photos /> },
           { path: "videos", element: <Videos /> },
           { path: "event-highlights", element: <EventHighlights /> },
@@ -174,7 +178,15 @@ export const router = createBrowserRouter([
 
       {
         path: "contact",
-        element: <Contact />,
+        children: [
+          { index: true, element: <Contact /> },
+          { path: "contact-form", element: <ContactForm /> },
+          { path: "office-details-map", element: <OfficeDetails /> },
+          {
+            path: "social-media-links",
+            element: <SocialMediaLinks />,
+          },
+        ],
       },
 
       // Catch all 404 last

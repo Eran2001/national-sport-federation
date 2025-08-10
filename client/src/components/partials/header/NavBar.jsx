@@ -4,74 +4,99 @@ import Icon from "../../ui/Icon";
 
 const mainNavLinks = [
   [
-    "About Us",
-    "Vision & Mission",
-    "History",
-    "Office Bearers",
-    "Executive Committee",
-    "Constitution",
+    { label: "About Us", path: "/about" },
+    { label: "Vision & Mission", path: "/about/vision-mission" },
+    { label: "History", path: "/about/history" },
+    { label: "Office Bearers", path: "/about/office-bearers" },
+    { label: "Executive Committee", path: "/about/executive-committee" },
+    { label: "Constitution", path: "/about/constitution" },
   ],
   [
-    "News & Media",
-    "Latest News",
-    "Press Releases",
-    "Announcements",
-    "Media Coverage",
-    "Newsletter Archive",
+    { label: "News & Media", path: "/news-media" },
+    { label: "Latest News", path: "/news-media/latest-news" },
+    { label: "Press Releases", path: "/news-media/press-releases" },
+    { label: "Announcements", path: "/news-media/announcements" },
+    { label: "Media Coverage", path: "/news-media/media-coverage" },
+    { label: "Newsletter Archive", path: "/news-media/newsletter-archive" },
   ],
   [
-    "Teams",
-    "National Teams",
-    "Player Profiles",
-    "Coach & Staff Profiles",
-    "Selection Criteria",
+    { label: "Teams", path: "/teams" },
+    { label: "National Teams", path: "/teams/national-teams" },
+    { label: "Player Profiles", path: "/teams/player-profiles/:id" },
+    {
+      label: "Coach & Staff Profiles",
+      path: "/teams/coach-staff-profiles/:id",
+    },
+    { label: "Selection Criteria", path: "/teams/selection-criteria" },
   ],
   [
-    "Events & Competitions",
-    "Event Calendar",
-    "Upcoming Events",
-    "Results & Rankings",
-    "Fixtures",
-    "Past Tournaments",
+    { label: "Events & Competitions", path: "/events" },
+    { label: "Event Calendar", path: "/events/calendar" },
+    { label: "Upcoming Events", path: "/events/results" },
+    { label: "Results & Rankings", path: "/events/results-rankings" },
+    { label: "Fixtures", path: "/events/fixtures" },
+    { label: "Past Tournaments", path: "/events/past-tournaments" },
   ],
   [
-    "Development",
-    "Coaching Programs",
-    "Refereeing Programs",
-    "Coaching Certification",
-    "Referee Certification",
-    "Grassroots Development",
-    "Talent Identification",
+    { label: "Development", path: "/development" },
+    { label: "Coaching Programs", path: "/development/coaching-programs" },
+    { label: "Refereeing Programs", path: "/development/refereeing-programs" },
+    {
+      label: "Coaching Certification",
+      path: "/development/coaching-certification",
+    },
+    {
+      label: "Referee Certification",
+      path: "/development/referee-certification",
+    },
+    {
+      label: "Grassroots Development",
+      path: "/development/grassroots-development",
+    },
+    {
+      label: "Talent Identification",
+      path: "/development/talent-identification",
+    },
   ],
   [
-    "Resources",
-    "Forms & Applications",
-    "Policies & Guidelines",
-    "RuleBooks",
-    "Downloads",
+    { label: "Resources", path: "/resources" },
+    { label: "Forms & Applications", path: "/resources/forms-applications" },
+    { label: "Policies & Guidelines", path: "/resources/policies-guidelines" },
+    { label: "RuleBooks", path: "/resources/rule-books" },
+    { label: "Downloads", path: "/resources/downloads" },
   ],
-  ["Gallery", "Photos", "Videos", "Event Highlights"],
   [
-    "Get Involved",
-    "Volunteer",
-    "Membership",
-    "Sponsorship Opportunities",
-    "Donations",
+    { label: "Gallery", path: "/gallery" },
+    { label: "Photos", path: "/gallery/photos" },
+    { label: "Videos", path: "/gallery/videos" },
+    { label: "Event Highlights", path: "/gallery/event-highlights" },
   ],
-  ["Contact Us", "Contact Form", "Office Details & Map", "Social Media Links"],
+  [
+    { label: "Get Involved", path: "/get-involved" },
+    { label: "Volunteer", path: "/get-involved/volunteer" },
+    { label: "Membership", path: "/get-involved/membership" },
+    { label: "Sponsorship Opportunities", path: "/get-involved/sponsorship" },
+    { label: "Donations", path: "/get-involved/donations" },
+  ],
+  [
+    { label: "Contact Us", path: "/contact" },
+    { label: "Contact Form", path: "/contact/contact-form" },
+    { label: "Office Details & Map", path: "/contact/office-details-map" },
+    { label: "Social Media Links", path: "/contact/social-media-links" },
+  ],
 ];
 
 const subNavLinks = [
-  "Home",
-  "About Us",
-  "News & Media",
-  "Teams",
-  "Events & Competitions",
-  "Development",
-  "Resources",
-  "Gallery",
-  "Get Involved",
-  "Contact Us",
+  { label: "Home", path: "/" },
+  { label: "About Us", path: "/about" },
+  { label: "News & Media", path: "/news-media" },
+  { label: "Teams", path: "/teams" },
+  { label: "Events & Competitions", path: "/events" },
+  { label: "Development", path: "/development" },
+  { label: "Resources", path: "/resources" },
+  { label: "Gallery", path: "/gallery" },
+  { label: "Get Involved", path: "/get-involved" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 const NavBar = () => {
@@ -154,7 +179,9 @@ const NavBar = () => {
                   isScroll && !isOpen ? "text-primary" : "text-light"
                 } text-2xl`}
               >
-                SPORTS
+                <NavLink to="/" onClick={() => setIsOpen(false)}>
+                  SPORTS
+                </NavLink>
               </h1>
             </div>
             <ul
@@ -164,22 +191,39 @@ const NavBar = () => {
                   : "text-light"
               } cursor-pointer`}
             >
-              <Link to="/" className="hover:text-primary transition-all">
+              <Link
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-primary transition-all"
+              >
                 Home
               </Link>
-              <Link to="/about" className="hover:text-primary transition-all">
+              <Link
+                to="/about"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-primary transition-all"
+              >
                 About Us
               </Link>
-              <Link to="/gallery" className="hover:text-primary transition-all">
+              <Link
+                to="/gallery"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-primary transition-all"
+              >
                 Gallery
               </Link>
               <Link
                 to="/get-involved"
+                onClick={() => setIsOpen(false)}
                 className="hover:text-primary transition-all"
               >
                 Join Us
               </Link>
-              <Link to="/contact" className="hover:text-primary transition-all">
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-primary transition-all"
+              >
                 Contact Us
               </Link>
             </ul>
@@ -197,12 +241,14 @@ const NavBar = () => {
           <div className="grid grid-cols-10 border-b-1 border-t-1">
             <div className="col-span-2 max-md:col-span-3 w-full h-full border-r border-muted">
               <ul className="pl-2 py-4 space-y-2">
-                {subNavLinks.map((link, idx) => (
+                {subNavLinks.map(({ label, path }, idx) => (
                   <li
                     key={idx}
                     className="text-light font-semibold cursor-pointer"
                   >
-                    {link}
+                    <NavLink to={path} onClick={() => setIsOpen(false)}>
+                      {label}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -210,7 +256,7 @@ const NavBar = () => {
             <div className="col-span-8 max-md:col-span-7 grid grid-cols-5 max-xl:grid-cols-4 max-lg:grid-cols-3 gap-2 max-lg:gap-4 w-full h-full p-6">
               {mainNavLinks.map((group, idx) => (
                 <ul key={idx} className="space-y-1">
-                  {group.map((link, linkIdx) => (
+                  {group.map(({ label, path }, linkIdx) => (
                     <li
                       key={linkIdx}
                       className={
@@ -219,7 +265,9 @@ const NavBar = () => {
                           : "text-muted text-xs font-normal"
                       }
                     >
-                      {link}
+                      <NavLink to={path} onClick={() => setIsOpen(false)}>
+                        {label}
+                      </NavLink>
                     </li>
                   ))}
                 </ul>
