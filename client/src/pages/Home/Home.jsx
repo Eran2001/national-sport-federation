@@ -11,7 +11,6 @@ const Home = () => {
         <Hero />
         <LatestNews />
         <UpcomingEvents />
-        <QuickLinks />
         <SponsorLogos />
       </div>
     </>
