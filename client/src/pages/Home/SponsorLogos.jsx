@@ -1,17 +1,34 @@
 import React from "react";
 
+const logos = [
+  { label: "Logo1" },
+  { label: "Logo2" },
+  { label: "Logo3" },
+  { label: "Logo4" },
+  { label: "Logo5" },
+  { label: "Logo6" },
+  { label: "Logo7" },
+  { label: "Logo8" },
+];
+
 const SponsorLogos = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-medium my-8 text-center">SponsorLogos</h1>
-      <div className="flex justify-around items-center">
-        <div className="p-10 bg-red-300"></div>
-        <div className="p-10 bg-red-300"></div>
-        <div className="p-10 bg-red-300"></div>
-        <div className="p-10 bg-red-300"></div>
-        <div className="p-10 bg-red-300"></div>
+    <section className="py-8 px-4 flex flex-col items-center ">
+      <h1 className="text-2xl font-medium my-8 text-center">Sponsor Logos</h1>
+      <div className="flex justify-around items-center gap-4 w-full ">
+        {logos.map((value, index) => {
+          return (
+            <>
+              <div className="p-6 rounded-md cursor-pointe border">
+                <h1 key={index} className="font-semibold">
+                  {value.label}
+                </h1>
+              </div>
+            </>
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

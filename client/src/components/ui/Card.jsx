@@ -2,10 +2,13 @@ import React from "react";
 
 const Card = ({ image, title, description, buttonText, buttonLink }) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col h-full">
+    <div
+      className="w-80 h-[420px] bg-white border border-gray-200 rounded-lg shadow-sm 
+                 dark:bg-gray-800 dark:border-gray-700 flex flex-col"
+    >
       <a href={buttonLink}>
         <img
-          className="rounded-t-lg w-full h-48 object-cover" // fixed height & object-fit for same size
+          className="rounded-t-lg w-full h-48 object-cover"
           src={image}
           alt={title}
         />
@@ -16,12 +19,15 @@ const Card = ({ image, title, description, buttonText, buttonLink }) => {
             {title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 flex-grow">
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 flex-grow line-clamp-3">
           {description}
         </p>
         <a
           href={buttonLink}
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mt-auto"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white 
+                     bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none 
+                     focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 
+                     dark:focus:ring-blue-800 mt-auto"
         >
           {buttonText}
           <svg
@@ -46,13 +52,3 @@ const Card = ({ image, title, description, buttonText, buttonLink }) => {
 };
 
 export default Card;
-
-{
-  /* <Card
-  image="/docs/images/blog/image-1.jpg"
-  title="Noteworthy technology acquisitions 2021"
-  description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-  buttonText="Read more"
-  buttonLink="#"
-/> */
-}
