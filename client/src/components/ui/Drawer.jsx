@@ -1,39 +1,44 @@
 import React from "react";
 
-const Drawer = ({ isOpen, onClose, position = "right", children }) => {
-  if (!isOpen) return null;
-
-  const positionClasses = {
-    right: "right-0 top-0 h-full w-80",
-    top: "top-0 left-0 w-full h-64",
-  };
-
+const Drawer = ({ title, isOpen, onClose, children }) => {
   return (
-    <div className="fixed inset-0 z-50">
-      {/* Overlay */}
-      <div
-        className="absolute inset-0 bg-black opacity-40"
-        onClick={onClose}
-      ></div>
-
-      {/* Close Button (outside drawer) */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 left-4 z-50 text-white text-xl font-bold bg-red-500 px-2 py-1 rounded hover:bg-red-600"
-      >
-        ✕
-      </button>
-
-      {/* Drawer Panel */}
-      <div
-        className={`fixed bg-white shadow-lg p-6 transition-transform duration-300 ${
-          position === "right"
-            ? "transform translate-x-0 right-0"
-            : "transform translate-y-0 top-0"
-        } ${positionClasses[position]}`}
-      >
-        {children}
+    <div
+      className={`fixed top-0 right-0 z-100 h-screen w-80 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${
+        isOpen ? "translate-x-0" : "translate-x-full"
+      }`}
+    >
+      {/* Header */}
+      <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+        {title && (
+          <h5 className="text-base font-semibold text-gray-500 dark:text-gray-400">
+            {title}
+          </h5>
+        )}
+        <button
+          type="button"
+          onClick={onClose}
+          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+        >
+          <svg
+            className="w-3 h-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+            />
+          </svg>
+        </button>
       </div>
+
+      {/* Content */}
+      <div className="p-4 overflow-y-auto h-full">{children}</div>
     </div>
   );
 };
