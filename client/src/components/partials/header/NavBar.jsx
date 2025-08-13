@@ -6,15 +6,14 @@ import logo from "@/assets/android-chrome-192x192.png";
 import Button from "@/components/ui/Button";
 
 const mainNavLinks = [
-  { label: "About Us", path: "/about" },
-  { label: "News & Media", path: "/news-media" },
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "News", path: "/news-media" },
   { label: "Teams", path: "/teams" },
-  { label: "Events & Competitions", path: "/events" },
+  { label: "Events", path: "/events" },
   { label: "Development", path: "/development" },
   { label: "Resources", path: "/resources" },
   { label: "Gallery", path: "/gallery" },
-  { label: "Get Involved", path: "/get-involved" },
-  { label: "Contact Us", path: "/contact" },
 ];
 
 const NavBar = () => {
@@ -37,7 +36,7 @@ const NavBar = () => {
       <nav
         className={`fixed w-full flex justify-between items-center h-20 px-4 transition-all duration-500 ${
           isScroll ? "bg-black/30 backdrop-blur-3xl" : ""
-        }`}
+        } z-200`}
       >
         <div className="flex gap-1 border-2 border-secondary rounded-md cursor-pointer">
           <img
@@ -48,9 +47,9 @@ const NavBar = () => {
           />
           <span className="text-4xl pt-[2px] pr-2">SPORTS</span>
         </div>
-        <ul className="flex justify-between items-center">
+        <ul className="ml-30 flex justify-between items-center border-none rounded-md gap-6 text-secondary  text-lg">
           {mainNavLinks.map(({ label, path }, index) => (
-            <li key={index}>
+            <li className="hover:text-primary" key={index}>
               <NavLink
                 to={path}
                 // className={({ isActive }) => (isActive ? "underline" : "")}
@@ -60,9 +59,9 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        <div>
-          <Button text="Contact Us" />
-          <Button text="Get Involved" />
+        <div className="flex gap-4 ">
+          <Button text="Contact Us" className="!text-secondary" />
+          <Button text="Get Involved" className="!text-secondary" />
         </div>
       </nav>
     </>
