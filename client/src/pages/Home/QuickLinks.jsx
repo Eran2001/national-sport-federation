@@ -2,8 +2,7 @@ import React from "react";
 import Card from "@/components/ui/Card";
 
 import img1 from "@/assets/hero-1.jpg";
-import img4 from "@/assets/hero-4.jpg";
-import img6 from "@/assets/hero-6.jpg";
+import img2 from "@/assets/hero-2.jpg";
 
 const links = [
   {
@@ -16,14 +15,14 @@ const links = [
   {
     buttonText: "Results",
     buttonLink: "#",
-    img: img4,
+    img: img2,
     title: "Results",
     description: "Hello Results",
   },
   {
     buttonText: "Constitution",
     buttonLink: "#",
-    img: img6,
+    img: img1,
     title: "Constitution",
     description: "Hello Constitution",
   },

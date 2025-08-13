@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../../assets/hero-1.jpg";
-import img6 from "../../assets/hero-6.jpg";
+import img2 from "../../assets/hero-2.jpg";
 
 const VisionMission = () => {
   return (
@@ -30,7 +30,7 @@ const VisionMission = () => {
         </section>
         <section className="border flex gap-8">
           <div>
-            <img src={img6} width={1000} height={1000} alt="" />
+            <img src={img2} width={1000} height={1000} alt="" />
           </div>
           <div>
             <div>
