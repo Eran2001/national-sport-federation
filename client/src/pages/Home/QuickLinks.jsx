@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../../components/ui/Card";
+import Card from "@/components/ui/Card";
 
-import img1 from "../../assets/hero-1.jpg";
-import img4 from "../../assets/hero-4.jpg";
-import img6 from "../../assets/hero-6.jpg";
+import img1 from "@/assets/hero-1.jpg";
+import img4 from "@/assets/hero-4.jpg";
+import img6 from "@/assets/hero-6.jpg";
 
 const links = [
   {

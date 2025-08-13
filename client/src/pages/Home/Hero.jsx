@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import heroImg1 from "../../assets/hero-1.jpg";
-import heroImg4 from "../../assets/hero-4.jpg";
-import heroImg6 from "../../assets/hero-6.jpg";
+import heroImg1 from "@/assets/hero-1.jpg";
+import heroImg4 from "@/assets/hero-4.jpg";
+import heroImg6 from "@/assets/hero-6.jpg";
 
-import Icon from "../../components/ui/Icon";
+import Icon from "@/components/ui/Icon";
 
 const slidesData = [
   { src: heroImg6, thumb: heroImg6, alt: "The Woods" },
