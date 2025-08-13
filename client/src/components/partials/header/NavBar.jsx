@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import logo from "../../../assets/android-chrome-192x192.png";
+import logo from "@/assets/android-chrome-192x192.png";
 
 import Button from "@/components/ui/Button";
 
@@ -34,8 +34,12 @@ const NavBar = () => {
   }, []);
   return (
     <>
-      <nav className="fixed w-full flex justify-between items-center h-20 px-4">
-        <div className="flex gap-1 border-2 border-secondary rounded-md">
+      <nav
+        className={`fixed w-full flex justify-between items-center h-20 px-4 transition-all duration-500 ${
+          isScroll ? "bg-black/30 backdrop-blur-3xl" : ""
+        }`}
+      >
+        <div className="flex gap-1 border-2 border-secondary rounded-md cursor-pointer">
           <img
             src={logo}
             width={40}
@@ -47,7 +51,12 @@ const NavBar = () => {
         <ul className="flex justify-between items-center">
           {mainNavLinks.map(({ label, path }, index) => (
             <li key={index}>
-              <NavLink to={path}>{label}</NavLink>
+              <NavLink
+                to={path}
+                // className={({ isActive }) => (isActive ? "underline" : "")}
+              >
+                {label}
+              </NavLink>
             </li>
           ))}
         </ul>
