@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from "react-router-dom";
 
 import ScrollToTop from "@/hooks/ScrollToTop";
-import NavBar from "../components/partials/header/NavBar";
-import Footer from "../components/partials/footer/Footer";
+import NavBar from "@/components/partials/header/NavBar";
+import Footer from "@/components/partials/footer/Footer";
 
 export default function MainLayout() {
   const location = useLocation();
