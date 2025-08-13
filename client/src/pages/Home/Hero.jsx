@@ -48,7 +48,7 @@ function Hero() {
   return (
     <div className="relative min-h-screen">
       {/* Slides */}
-      {slidesData.map((slide, index) => (
+      {/* {slidesData.map((slide, index) => (
         <div
           key={index}
           className={`${
@@ -56,15 +56,15 @@ function Hero() {
           } mySlides`}
         >
           <img
-            src={slide.src}
+            // src={slide.src}
             alt={slide.alt}
             className="w-full h-screen object-cover"
           />
         </div>
-      ))}
+      ))} */}
 
       {/* Next/Previous Buttons */}
-      <button
+      {/* <button
         className="absolute top-[50%] left-0 transform cursor-pointer -translate-y-1/2 text-primary font-bold text-xl p-4 rounded-r-md bg-black flex items-center justify-center"
         onClick={() => plusSlides(-1)}
       >
@@ -76,7 +76,7 @@ function Hero() {
         onClick={() => plusSlides(1)}
       >
         <Icon icon="heroicons:chevron-double-right" size={30} />
-      </button>
+      </button> */}
 
       {/* Thumbnails */}
       {/* <div className="flex flex-wrap">

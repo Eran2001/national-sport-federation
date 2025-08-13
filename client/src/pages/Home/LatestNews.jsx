@@ -8,32 +8,32 @@ const news = [
   },
   { id: 2, title: "Federation Partners with New Sponsor", date: "2025-08-10" },
   {
-    id: 1,
+    id: 3,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },
   {
-    id: 1,
+    id: 4,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },
   {
-    id: 1,
+    id: 5,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },
   {
-    id: 1,
+    id: 6,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },
   {
-    id: 1,
+    id: 7,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },
   {
-    id: 1,
+    id: 8,
     title: "National Championships Start Next Week",
     date: "2025-08-20",
   },

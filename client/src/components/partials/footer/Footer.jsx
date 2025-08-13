@@ -29,7 +29,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="resources/policies-guidelines"
-                  class="hover:underline me-4 md:me-6"
+                  className="hover:underline me-4 md:me-6"
                 >
                   Policies & Guidelines
                 </Link>

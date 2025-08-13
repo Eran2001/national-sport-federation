@@ -34,8 +34,9 @@ const QuickLinks = () => {
     <section className="py-8 px-4">
       <h1 className="text-2xl font-medium my-8 text-center">QuickLinks</h1>
       <div className="flex justify-around items-center">
-        {links.map((link) => (
+        {links.map((link, index) => (
           <Card
+            key={index}
             image={link.img}
             title={link.title}
             description={link.description}

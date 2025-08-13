@@ -18,13 +18,9 @@ const SponsorLogos = () => {
       <div className="flex justify-around items-center gap-4 w-full ">
         {logos.map((value, index) => {
           return (
-            <>
-              <div className="p-6 rounded-md cursor-pointe border">
-                <h1 key={index} className="font-semibold">
-                  {value.label}
-                </h1>
-              </div>
-            </>
+            <div key={index} className="p-6 rounded-md cursor-pointe border">
+              <h1 className="font-semibold">{value.label}</h1>
+            </div>
           );
         })}
       </div>
