@@ -12,7 +12,7 @@ export default function MainLayout() {
     <>
       <ScrollToTop />
       <NavBar />
-      <main className={`min-h-screen ${!isHeroPage ? "" : ""} bg-primary`}>
+      <main className={`min-h-screen ${!isHeroPage ? "" : ""} `}>
         <Outlet />
       </main>
       <Footer />
