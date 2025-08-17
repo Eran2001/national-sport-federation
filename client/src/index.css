@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --primary-background: #d1d5db;
+  --success: #10b981;
+  --warning: #fbbf24;
+  --error: #ef4444;
+}
+
+* {
+  font-family: "Inter", serif;
+}
+
+body {
+  background-color: var(--primary-background);
+}
+
+@theme {
+  /* Define a primary color */
+  --color-primary: #ffd700;
+
+  /* Define a secondary color */
+  --color-secondary: #0033a0;
+
+  /* Define a muted color */
+  --color-muted: #f4f4f4;
+
+  /* Define a light color */
+  --color-light: #e6f0fa;
+
+  /* Define a success color */
+  --color-success: #10b981;
+
+  /* Define a warning color */
+  --color-warning: #fbbf24;
+
+  /* Define a error color */
+  --color-error: #ef4444;
+}
+
+/* toastStyles.css */
+.toast-success {
+  background-color: var(--success) !important;
+  color: white !important;
+  font-weight: bold;
+  border-left: 6px solid #1e7e34;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.toast-error {
+  background-color: var(--error) !important;
+  color: white !important;
+  font-weight: bold;
+  border-left: 6px solid #bd2130;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+.toast-warning {
+  background-color: var(--warning) !important;
+  color: black !important;
+  font-weight: bold;
+  border-left: 6px solid #e0a800;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+}
