@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --primary-background: #d1d5db;
+  --primary-background: #3e351f;
   --success: #10b981;
   --warning: #fbbf24;
   --error: #ef4444;
@@ -17,25 +17,16 @@ body {
 
 @theme {
   /* Define a primary color */
-  --color-primary: #ffd700;
+  --color-primary: #d09a13;
 
   /* Define a secondary color */
-  --color-secondary: #0033a0;
+  --color-secondary: #3e351f;
 
   /* Define a muted color */
   --color-muted: #f4f4f4;
 
   /* Define a light color */
-  --color-light: #e6f0fa;
-
-  /* Define a success color */
-  --color-success: #10b981;
-
-  /* Define a warning color */
-  --color-warning: #fbbf24;
-
-  /* Define a error color */
-  --color-error: #ef4444;
+  --color-light: #f5e6c8;
 }
 
 /* toastStyles.css */
