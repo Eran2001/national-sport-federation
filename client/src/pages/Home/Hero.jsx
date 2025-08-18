@@ -40,7 +40,7 @@ function Hero() {
   //   </div>
 
   return (
-    <div className="relative min-h-screen bg-amber-300">
+    <div className="relative min-h-screen">
       {/* Slides */}
       {/* {slidesData.map((slide, index) => (
         <div

@@ -29,7 +29,7 @@ const events = [
 
 const UpcomingEvents = () => {
   return (
-    <section className=" bg-green-300">
+    <section className="">
       <h1 className="text-2xl font-medium text-center">Upcoming Events</h1>
       <div className="grid md:grid-cols-2 gap-4">
         {events.map((event) => (

@@ -30,7 +30,7 @@ const links = [
 
 const QuickLinks = () => {
   return (
-    <section className="bg-red-300">
+    <section className="">
       <h1 className="text-2xl font-medium text-center">QuickLinks</h1>
       <div className="flex justify-around items-center">
         {links.map((link, index) => (

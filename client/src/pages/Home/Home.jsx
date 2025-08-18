@@ -7,7 +7,7 @@ import SponsorLogos from "./SponsorLogos";
 const Home = () => {
   return (
     <>
-      <div className="">
+      <div className="px-20">
         <Hero />
         <LatestNews />
         <UpcomingEvents />

@@ -41,7 +41,7 @@ const news = [
 
 const LatestNews = () => {
   return (
-    <section className="bg-blue-300">
+    <section className="">
       <h1 className="text-2xl font-medium text-center">Latest News</h1>
       <ul className="grid grid-cols-4 gap-4">
         {news.map((item) => (

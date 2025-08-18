@@ -12,20 +12,7 @@ const logos = [
 ];
 
 const SponsorLogos = () => {
-  return (
-    <section className="flex flex-col items-center bg-gray-500">
-      <h1 className="text-2xl font-medium text-center">Sponsor Logos</h1>
-      <div className="flex justify-around items-center gap-4 w-full ">
-        {logos.map((value, index) => {
-          return (
-            <div key={index} className="p-6 rounded-md cursor-pointe border">
-              <h1 className="font-semibold">{value.label}</h1>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
+  return <section className="flex flex-col items-center"></section>;
 };
 
 export default SponsorLogos;
