@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --primary-background: #3e351f;
+  --primary-background: #1f2937;
   --success: #10b981;
   --warning: #fbbf24;
   --error: #ef4444;
@@ -12,7 +12,10 @@
 }
 
 body {
-  background-color: var(--primary-background);
+  /* Tailwind's bg-gradient-to-b from-black to-gray-900 in vanilla CSS */
+  background: linear-gradient(to bottom, black, #111827);
+  min-height: 100vh; /* ensures it covers full screen height */
+  margin: 0; /* remove default margin */
 }
 
 @theme {
@@ -20,7 +23,7 @@ body {
   --color-primary: #d09a13;
 
   /* Define a secondary color */
-  --color-secondary: #3e351f;
+  --color-secondary: #1f2937;
 
   /* Define a muted color */
   --color-muted: #f4f4f4;
