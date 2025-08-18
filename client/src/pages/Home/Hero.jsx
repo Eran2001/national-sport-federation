@@ -10,8 +10,8 @@ const Hero = () => {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             {/* Text Content */}
-            <div className="h-full">
-              <div></div>
+            <div className="relative h-full">
+              <div className="absolute h-20 w-20"></div>
               <h1 className="text-4xl font-bold text-light sm:text-6xl xl:text-8xl">
                 WHERE SPORTS & SPIRITS COLLIDE!
               </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Image secstion */}
             <div className="">
               <div className="w-full h-[70vh] bg-primary"></div>
             </div>
