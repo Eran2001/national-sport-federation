@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Abhaya Libre
+- Font Title: Georama
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/abhayalibre/v17/e3t5euGtX-Co5MNzeAOqinEYj2ryqtxI6oYtBA.ttf
+- Font Source: https://fonts.gstatic.com/s/georama/v14/MCo5zAn438bIEyxFf6swMnNpvPcUwW4u4yRcDh-ZjxApn9K5GvgtmQsL5_tgbg.ttf
 - Font License: undefined)

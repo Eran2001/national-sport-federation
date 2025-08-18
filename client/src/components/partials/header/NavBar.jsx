@@ -39,7 +39,9 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full bg-success transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full px-4 bg-success ${
+          menuOpen ? "bg-black backdrop-blur-3xl" : ""
+        } transition-all duration-500 ${
           isScroll ? "bg-black backdrop-blur-3xl" : ""
         } z-50`}
       >
@@ -50,7 +52,7 @@ const NavBar = () => {
               onClick={() => navigate("/")}
               className="text-3xl md:text-4xl px-2 text-light hover:text-primary transition-colors duration-500"
             >
-              SPORTS
+              <span className="text-primary hover:!text-light">S</span>PORTS
             </span>
           </div>
 
@@ -122,7 +124,7 @@ const NavBar = () => {
 
       {/* Mobile Menu (md and below) */}
       <div
-        className={`fixed top-20 left-0 w-full bg-success/95 z-[51] bg-black xl:hidden transition-all duration-300 ${
+        className={`fixed top-20 left-0 w-full bg-success/95 z-[51] bg-black xl:hidden transition-all duration-500 ${
           menuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
