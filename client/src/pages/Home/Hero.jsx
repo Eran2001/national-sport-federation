@@ -21,7 +21,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Image secstion */}
+            {/* Image */}
             <div className="">
               <div className="w-full h-[70vh] bg-primary"></div>
             </div>
